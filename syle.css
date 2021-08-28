@@ -1,0 +1,216 @@
+body {
+  background-color: #101d42;
+}
+.parent {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+  
+video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%); /*procentele sunt din el insusi*/
+    z-index: 1;
+}
+  
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+}
+  
+.content {
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+  
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 25vh;
+}
+
+/* NAVBAR */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  
+}
+
+li a:hover {
+  color: #fbb44c;
+  text-decoration: none;
+}
+.navbar {
+    z-index: 4;
+    opacity: 0.7;
+    width: 100%;
+    justify-content: flex-end;
+    top: 50px;
+    right: 100px;
+    position: fixed;
+}
+/* NAVBAR */
+
+h1 {
+  font-size: 90px;
+  color: white;
+}
+h2 {
+  font-size: 30px;
+  color: white;
+  font-style: inherit;
+}
+
+
+
+/* TYPEWRYTER */
+/* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+/* Global */
+
+
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+.line-1 anim-typewriter {
+  top: 20px;
+}
+.first-line {
+  position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);   
+}
+h3 {
+  color: white;
+  font-family: 'Hina Mincho', serif;
+  font-size: 30px;
+}
+
+p {
+  color: white;
+  font-family: 'Hina Mincho', serif;
+  font-size: 30px;
+}
+.line2 {
+  display: flex;
+}
+
+/* TYPEWRYTER */
+.logouri {
+  display: flex;
+}
+
+/* BUTTON AFLA MAI MULTE */
+.btn {
+  color: white;
+  top: 50px;
+  width: 300px;
+  height: 60px;
+  background-color: #2bb686;
+}
+.btn:hover {
+  background-color: rgba(0,0,0,0.5);
+  color: #2bb686;
+  opacity: 1;
+}
+
+.parent .btn {
+  position: relative;
+}
+/* BUTTON AFLA MAI MULTE */
+
+/* CALENDAR */
+.calendar {
+  background-color: white;
+  color: #101d42;
+  text-align: center;
+  font-size: 60px;
+  font-family: 'Work Sans', sans-serif;
+}
+/* CALENDAR */
+
+/* CARDS */
+.cards {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 300px;
+}
+.smallbox {
+  color: black;
+  background-color: #f8b357 ;
+  font-size: 0.8rem;
+}
+.card-title {
+  font-size: 0.8rem;
+  color: black;
+}
+.card {
+  width: 300px;
+}
+/* CARDS */
+
+.lines {
+  text-align: center;
+}
+.line2 {
+  width: 500px;
+  
+}
+  
