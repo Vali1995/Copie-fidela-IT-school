@@ -80,7 +80,7 @@ li a:hover {
 }
 .itschoolimg {
   position: relative;
-  left: -500px;
+  left: -400px;
 }
 /* NAVBAR */
 
@@ -407,8 +407,8 @@ p {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 200; /* Sit on top */
-  left: 0;
-  top: 0;
+  bottom: 0;
+  right: 0;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: scroll; /* Enable scroll if needed */
@@ -430,7 +430,7 @@ p {
 /* The Close Button */
 .close {
   color: #aaa;
-  float: right;
+  float: left;
   font-size: 28px;
   font-weight: bold;
 }
@@ -445,7 +445,6 @@ p {
   position: fixed;
   bottom: 0;
   right: 0;
-  z-index: 1;
   cursor: pointer;
   z-index: 100;
 }
@@ -462,12 +461,17 @@ p {
   top: 50px;
   width: 300px;
   height: 60px;
-  background-color: #2bb686;
+  background-color: rgb(24, 31, 76);
+  border-radius: 20px;
 }
-.btnmodal1:hover {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #2bb686;
-  opacity: 1;
+.btnmodal2 {
+  color: rgb(24, 31, 76);
+  top: -10px;
+  width: 300px;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  border: lightgray;
 }
 
 /* BTN MODAL */
@@ -480,7 +484,7 @@ p {
 }
 .modaltext2 {
   color: rgb(24, 31, 76);
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 100;
 }
 /* MODAL */
